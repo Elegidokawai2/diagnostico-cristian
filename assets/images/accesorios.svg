@@ -1,0 +1,25 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg viewBox=0 0 400 320 width=100% height=100%>
+  <defs>
+    <linearGradient id=bgLight7 x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% stop-color=#f8fafc />
+      <stop offset=100% stop-color=#e2e8f0 />
+    </linearGradient>
+    <filter id=softShadow7 x=-10% y=-10% width=120% height=130%>
+      <feDropShadow dx=0 dy=12 stdDeviation=14 flood-color=#0f172a flood-opacity=0.2/>
+    </filter>
+  </defs>
+  <rect width=400 height=320 rx=16 fill=url(#bgLight7)/>
+  <ellipse cx=200 cy=275 rx=65 ry=12 fill=#cbd5e1 opacity=0.6/>
+  <g filter=url(#softShadow7) transform=translate(125, 45)>
+    <!-- Asa superior -->
+    <path d=M 50 40 C 50 15 100 15 100 40 fill=none stroke=#18181b stroke-width=8 stroke-linecap=round/>
+    <!-- Cuerpo de la Mochila -->
+    <path d=M 25 70 C 25 35 125 35 125 70 L 140 200 C 140 220 10 220 10 200 Z fill=#27272a stroke=#18181b stroke-width=2/>
+    <!-- Bolsillo Frontal -->
+    <path d=M 22 125 C 22 110 128 110 128 125 L 132 195 C 132 210 18 210 18 195 Z fill=#18181b/>
+    <!-- Cremalleras y detalles -->
+    <line x1=30 y1=120 x2=120 y2=120 stroke=#3f3f46 stroke-width=3/>
+    <!-- Logo pequeño dorado -->
+    <circle cx=75 cy=90 r=3.5 fill=#f59e0b/>
+  </g>
+</svg>

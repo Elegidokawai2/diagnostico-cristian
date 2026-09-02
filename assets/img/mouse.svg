@@ -1,0 +1,28 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg viewBox=0 0 400 300 width=100% height=100%>
+  <defs>
+    <linearGradient id=bgGrad8 x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% stop-color=#18181b />
+      <stop offset=100% stop-color=#09090b />
+    </linearGradient>
+    <linearGradient id=mouseRgb x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% stop-color=#10b981 />
+      <stop offset=100% stop-color=#6366f1 />
+    </linearGradient>
+  </defs>
+  <rect width=400 height=300 rx=16 fill=url(#bgGrad8)/>
+  <!-- Gaming Mouse -->
+  <g transform=translate(135, 45)>
+    <!-- Base Shape -->
+    <path d=M 65 10 C 25 10 10 60 10 120 C 10 180 30 205 65 205 C 100 205 120 180 120 120 C 120 60 105 10 65 10 Z fill=#18181b stroke=#3f3f46 stroke-width=3/>
+    <!-- RGB Line contour -->
+    <path d=M 65 20 C 35 20 22 65 22 120 C 22 170 38 195 65 195 C 92 195 108 170 108 120 C 108 65 95 20 65 20 Z fill=none stroke=url(#mouseRgb) stroke-width=2.5/>
+    <!-- Buttons split -->
+    <line x1=65 y1=20 x2=65 y2=85 stroke=#3f3f46 stroke-width=2/>
+    <!-- Scroll Wheel -->
+    <rect x=58 y=35 width=14 height=28 rx=6 fill=#09090b stroke=url(#mouseRgb) stroke-width=2/>
+    <!-- DPI Button -->
+    <rect x=61 y=72 width=8 height=10 rx=2 fill=#52525b/>
+    <!-- Palm Logo Glow -->
+    <polygon points=65,130 55,145 75,145 fill=url(#mouseRgb) opacity=0.8/>
+  </g>
+</svg>
