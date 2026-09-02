@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand - Detalle de Producto</title>
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/detalle.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar custom-navbar sticky-top py-3">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand text-dark fw-bold fs-3 mb-0" href="../index.html">
+          Brand
+        </a>
+
+        <ul class="navbar-nav d-none d-md-flex flex-row align-items-center gap-4 mb-0 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link px-2 py-1" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 py-1" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 py-1" href="../index.html#nosotros">Nosotros</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center">
+          <a href="productos.html" class="cart-icon-btn position-relative text-dark p-2"
+            aria-label="Carrito de compras">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span
+              class="position-absolute top-1 start-100 translate-middle p-1 bg-danger border border-light rounded-circle cart-red-dot">
+              <span class="visually-hidden">Productos en carrito</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="detail-view container my-3 my-md-5" role="main">
+    <nav aria-label="breadcrumb" class="mb-3 mb-md-4">
+      <div class="breadcrumbs-clean">
+        <a href="../index.html" class="breadcrumb-link-blue text-decoration-none">Inicio</a>
+        <span class="text-muted mx-1">/</span>
+        <a href="productos.html" class="breadcrumb-link-blue text-decoration-none">Productos</a>
+        <span class="text-muted mx-1">/</span>
+        <span class="breadcrumb-current-gray" id="breadcrumb-title">Audifonos Inalámbricos</span>
+      </div>
+    </nav>
+
+    <div id="product-detail-card" class="row g-3 g-md-4 g-lg-5 align-items-start mb-4 mb-md-5">
+      <div class="col-12 col-md-6">
+        <div class="detail-clean-img-box rounded-4 d-flex align-items-center justify-content-center p-3 p-md-4">
+          <img
+            src="https://www.steren.com.mx/media/catalog/product/cache/0236bbabe616ddcff749ccbc14f38bf2/image/23017b42b/audifonos-bluetooth-multipunto-anc.jpg"
+            alt="Producto" class="img-fluid detail-product-clean-img" id="detail-img">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="detail-clean-info">
+          <h1 class="detail-clean-title fw-bold text-dark mb-1 mb-md-2" id="detail-title">Audifonos Inalámbricos</h1>
+
+          <div class="detail-clean-price fw-bold text-dark mb-1 mb-md-2" id="detail-price">
+            $59.99
+          </div>
+
+          <div class="detail-clean-rating d-flex align-items-center gap-2 mb-2 mb-md-3">
+            <div class="d-inline-flex align-items-center gap-1" id="detail-stars">
+              <span class="star-gold">★</span>
+              <span class="star-gold">★</span>
+              <span class="star-gold">★</span>
+              <span class="star-gold">★</span>
+              <span class="star-gold">★</span>
+            </div>
+            <span class="text-muted small" id="detail-reviews">(128)</span>
+          </div>
+
+          <p class="text-muted small mb-3 mb-md-4" id="detail-short-desc">
+            Sonido de alta calidad, conexión bluetooth y bateria de larga duración.
+          </p>
+
+          <div class="detail-qty-section mb-3 mb-md-4">
+            <label class="form-label small text-muted mb-1 mb-md-2 d-block">Cantidad</label>
+            <div class="qty-stepper-clean d-inline-flex align-items-center">
+              <button type="button" class="btn-stepper" id="qty-minus-btn" aria-label="Disminuir">-</button>
+              <input type="number" id="detail-qty-input" class="input-stepper text-center" value="1" min="1" max="99">
+              <button type="button" class="btn-stepper" id="qty-plus-btn" aria-label="Aumentar">+</button>
+            </div>
+          </div>
+
+          <div class="detail-btn-container mb-3">
+            <button type="button" id="add-to-cart-btn" class="btn btn-royal-blue w-100 py-3 fw-semibold">
+              Agregar al carrito
+            </button>
+          </div>
+
+          <div id="cart-toast"
+            class="alert alert-success d-none align-items-center justify-content-between p-2 px-3 rounded-3"
+            role="alert">
+            <div class="d-flex align-items-center gap-2">
+              <span>✅</span>
+              <span class="small fw-semibold" id="toast-message">¡Producto agregado al carrito!</span>
+            </div>
+            <button type="button" class="btn-close btn-close-sm" id="close-toast-btn"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-clean-description pt-3 pt-md-4 border-top">
+      <h4 class="fw-bold text-dark mb-2 mb-md-3">Descripción</h4>
+      <p class="text-secondary leading-relaxed mb-0" id="detail-full-desc">
+        Audifonos inalámbricos con cancelación de ruido, cómodos y con gran duración de batería. Ideales para música y
+        llamadas.
+      </p>
+    </div>
+  </main>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/products-data.js"></script>
+  <script src="../js/detalle.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg viewBox=0 0 400 320 width=100% height=100%>
+  <defs>
+    <linearGradient id=bgLight3 x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% stop-color=#f8fafc />
+      <stop offset=100% stop-color=#e2e8f0 />
+    </linearGradient>
+    <filter id=softShadow3 x=-10% y=-10% width=120% height=130%>
+      <feDropShadow dx=0 dy=12 stdDeviation=14 flood-color=#0f172a flood-opacity=0.2/>
+    </filter>
+  </defs>
+  <rect width=400 height=320 rx=16 fill=url(#bgLight3)/>
+  <ellipse cx=200 cy=270 rx=80 ry=12 fill=#cbd5e1 opacity=0.6/>
+  <g filter=url(#softShadow3) transform=translate(85, 75)>
+    <!-- Cuerpo de Cámara -->
+    <path d=M 45 35 L 75 12 L 155 12 L 185 35 L 215 35 C 225 35 230 45 230 55 L 230 150 C 230 160 225 168 215 168 L 15 168 C 5 168 0 160 0 150 L 0 55 C 0 45 5 35 15 35 Z fill=#18181b stroke=#27272a stroke-width=2/>
+    <!-- Empuñadura -->
+    <rect x=8 y=48 width=26 height=108 rx=6 fill=#09090b/>
+    <!-- Dial y disparador -->
+    <rect x=22 y=24 width=18 height=11 rx=3 fill=#52525b/>
+    <circle cx=165 cy=24 r=8 fill=#3f3f46/>
+    <!-- Gran Lente -->
+    <circle cx=115 cy=102 r=52 fill=#27272a stroke=#3f3f46 stroke-width=4/>
+    <circle cx=115 cy=102 r=42 fill=#09090b stroke=#ef4444 stroke-width=2/>
+    <circle cx=115 cy=102 r=32 fill=#1e293b/>
+    <ellipse cx=102 cy=88 rx=10 ry=5 fill=#ffffff opacity=0.25 transform=rotate(-30 102 88)/>
+  </g>
+</svg>

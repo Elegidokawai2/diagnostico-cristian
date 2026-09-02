@@ -1,0 +1,25 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg viewBox=0 0 400 320 width=100% height=100%>
+  <defs>
+    <linearGradient id=bgLight5 x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% stop-color=#f8fafc />
+      <stop offset=100% stop-color=#e2e8f0 />
+    </linearGradient>
+    <linearGradient id=phoneScreen x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% stop-color=#0284c7 />
+      <stop offset=100% stop-color=#6366f1 />
+    </linearGradient>
+    <filter id=softShadow5 x=-10% y=-10% width=120% height=130%>
+      <feDropShadow dx=0 dy=12 stdDeviation=14 flood-color=#0f172a flood-opacity=0.2/>
+    </filter>
+  </defs>
+  <rect width=400 height=320 rx=16 fill=url(#bgLight5)/>
+  <ellipse cx=200 cy=275 rx=75 ry=12 fill=#cbd5e1 opacity=0.6/>
+  <g filter=url(#softShadow5)>
+    <!-- Back phone -->
+    <rect x=135 y=60 width=80 height=155 rx=14 fill=#0f172a stroke=#334155 stroke-width=2 transform=rotate(-10 175 137)/>
+    <rect x=140 y=68 width=70 height=139 rx=8 fill=url(#phoneScreen) transform=rotate(-10 175 137)/>
+    <!-- Front phone -->
+    <rect x=180 y=75 width=85 height=165 rx=16 fill=#18181b stroke=#52525b stroke-width=3 transform=rotate(8 222 157)/>
+    <rect x=186 y=83 width=73 height=149 rx=10 fill=#0284c7 transform=rotate(8 222 157)/>
+  </g>
+</svg>
