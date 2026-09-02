@@ -82,20 +82,33 @@
 }
 
 @media (max-width: 767.98px) {
+  .breadcrumbs-clean {
+    font-size: 0.85rem;
+  }
+
   .detail-clean-img-box {
-    height: 260px;
-    padding: 16px !important;
+    height: 240px;
+    padding: 12px !important;
+    border-radius: 16px;
   }
 
   .detail-product-clean-img {
-    max-height: 220px;
+    max-height: 200px;
   }
 
   .detail-clean-title {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 
   .detail-clean-price {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .detail-clean-description h4 {
+    font-size: 1.15rem;
+  }
+
+  .detail-clean-description p {
+    font-size: 0.9rem;
   }
 }
